@@ -94,7 +94,7 @@ func TestMakeRequestFromRawWithPayloads(t *testing.T) {
 		AttackType: "clusterbomb",
 		Raw: []string{`GET /manager/html HTTP/1.1
 Host: {{Hostname}}
-User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)
 Connection: close
 Authorization: Basic {{username + ':' + password}}
 Accept-Encoding: gzip`},
@@ -133,7 +133,7 @@ func TestMakeRequestFromRawPayloadExpressions(t *testing.T) {
 		AttackType: "clusterbomb",
 		Raw: []string{`GET /manager/html HTTP/1.1
 Host: {{Hostname}}
-User-Agent: Nuclei - Open-source project (github.com/projectdiscovery/nuclei)
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)
 Connection: close
 Authorization: Basic {{base64(username + ':' + password)}}
 Accept-Encoding: gzip`},
